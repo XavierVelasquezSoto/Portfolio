@@ -3,8 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container-header">
+        <nav>
+          <div class="header-link">
+            <a href="#about">Sobre mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="about">
+        <h1 class="name-description">Hola, soy Xavier</h1>
+        <h2>Sobre mí</h2>
+        <p class="about-text">
+          "Soy un desarrollador front-end enfocado en crear experiencias web
+          funcionales. Siempre en busca de mejorar mis habilidades, trabajo por
+          objetivos y me esfuerzo por contribuir al éxito del equipo. Estoy
+          comprometido con el aprendizaje continuo y con alcanzar mis metas."
+        </p>
+      </section>
+      <section id="projects">
+        <div class="proyecto-div">
+          <h2 class="subtitle">Proyectos</h2>
+          <img
+            class="symbol"
+            src="./assets/img/availability-svgrepo-com.svg"
+            alt=""
+          />
+        </div>
+        <div class="container-projects">
+          <div class="project">
+            <a href="https://test-cart-products.onrender.com/"
+              ><img
+                class="width"
+                src="./assets/img/cart-products-react.png"
+                alt=""
+            /></a>
+            <h3 class="info-project">Cart Products</h3>
+          </div>
+          <div class="project">
+            <a
+              href="https://xaviervelasquezsoto.github.io/Generador-Password-Avanzado/"
+              ><img
+                class="width"
+                src="./assets/img/generate-password.png"
+                alt=""
+            /></a>
+            <h3 class="info-project">Generador de contraseña</h3>
+          </div>
+          <div class="project">
+            <a href="https://xaviervelasquezsoto.github.io/Jankenpon/"
+              ><img
+                class="width"
+                src="./assets/img/piedra-papel-tijera.png"
+                alt=""
+            /></a>
+            <h3 class="info-project">Piedra, papel, tijera</h3>
+          </div>
+          <div class="project">
+            <a href="https://xaviervelasquezsoto.github.io/Todo-List/"
+              ><img class="width" src="./assets/img/todo-list.png" alt=""
+            /></a>
+            <h3 class="info-project">Todo List</h3>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-subtitle">
+          <h2 class="contact-title">Contacto</h2>
+          <img
+            class="symbol"
+            src="./assets/img/mail-reception-svgrepo-com.svg"
+            alt=""
+          />
+        </div>
+        <form class="contact">
+          <label class="space-label" for="name">Nombre:</label>
+          <input class="space-text" type="text" name="name" required />
+          <label class="space-label" for="email">Email:</label>
+          <input
+            class="space-text"
+            type="email"
+            name="email"
+            required
+            pattern="^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$"
+          />
+          <label class="space-label" for="message">Mensaje:</label>
+          <textarea class="space" name="message" required></textarea>
+          <button class="submit" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>
