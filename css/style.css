@@ -128,9 +128,19 @@ body {
   }
 }
 
+.symbol-project {
+  width: 70px;
+  height: 70px;
+}
+
 .symbol {
   width: 70px;
   height: 70px;
+  transition: scale 0.5s;
+}
+
+.symbol:hover {
+  scale: 0.8;
 }
 
 .subtitle {
@@ -145,66 +155,16 @@ body {
   }
 }
 
-.info-project {
-  text-align: center;
-}
-
 .contact-subtitle {
   font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 135px;
-  gap: 20px;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-inline: 10%;
-  padding-bottom: 100px;
-}
-
-@media screen and (width>768px) {
-  .contact {
-    padding-inline: 35%;
-  }
-}
-
-.space-label {
-  margin-bottom: 15px;
-}
-
-.space-text {
-  margin-bottom: 35px;
-  border: none;
-  height: 30px;
-}
-
-@media screen and (width>768px) {
-  .space-text {
-    height: 25px;
-  }
-}
-
-.space {
-  min-height: 100px;
-  margin-bottom: 55px;
-  border-radius: 10px;
-}
-
-.submit {
-  font-size: 20px;
-  font-weight: 600;
-  height: 80px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
+  gap: 40px;
 }
 
 .social {
-  text-align: center;
   font-size: 30px;
   margin: 0;
 }
