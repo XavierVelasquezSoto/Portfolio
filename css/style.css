@@ -61,6 +61,11 @@ body {
 @media screen and (width>768px) {
   .width {
     margin-bottom: 20px;
+    transition: scale 0.5s;
+  }
+
+  .width:hover {
+    scale: 0.9;
   }
 }
 
@@ -196,4 +201,55 @@ body {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+}
+
+.social {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+
+.social-media {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+@media screen and (width>768px) {
+  .social-media {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.scale {
+  transition: scale 0.5s;
+}
+.scale:hover {
+  scale: 0.8;
+}
+
+.size-logo-1 {
+  width: 120px;
+}
+
+@media screen and (width>768px) {
+  .size-logo-1 {
+    width: 100px;
+  }
+}
+
+.size-logo-2 {
+  height: 50px;
+  width: 120px;
+}
+
+@media screen and (width>768px) {
+  .size-logo-2 {
+    width: 120px;
+  }
 }
