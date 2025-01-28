@@ -161,7 +161,7 @@ body {
 
 @media screen and (width>768px) {
   .contact {
-    padding-inline: 40%;
+    padding-inline: 35%;
   }
 }
 
@@ -192,4 +192,5 @@ body {
   height: 80px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
